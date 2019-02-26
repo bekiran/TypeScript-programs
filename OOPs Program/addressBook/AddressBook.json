@@ -1,0 +1,20 @@
+{
+    "Person": [
+        {
+            "Firstname": "Kiran",
+            "LastName": "BE",
+            "Address": "Bangalore",
+            "State": "Karnataka",
+            "Zip": 500010,
+            "Mobile": "9845414358"
+        },
+        {
+            "Firstname": "Eswarappa",
+            "LastName": "BS",
+            "Address": "Shimoga",
+            "State": "Karnataka",
+            "Zip": 577418,
+            "Mobile": "9483339805"
+        }
+    ]
+}
