@@ -1,0 +1,53 @@
+{
+    "Rice": [
+        {
+            "name": "Basmati",
+            "weight": 1,
+            "price": 200
+        },
+        {
+            "name": " Brownrice",
+            " weight": 1,
+            "price": 100
+        },
+        {
+            "name": "Grainrice",
+            "weight": 1,
+            "price": 200
+        }
+    ],
+    "pulses": [
+        {
+            "name": "Greengram",
+            "weight": 1,
+            "price": 100
+        },
+        {
+            "name": "Redlentils",
+            "weight": 1,
+            "price": 80
+        },
+        {
+            "name": "Blacklentils",
+            "weight": 1,
+            "price": 50
+        }
+    ],
+    "wheat": [
+        {
+            "name": "Ashirvadh",
+            "weight": 1,
+            "price": 200
+        },
+        {
+            "name": "patanjali",
+            "weight": 1,
+            "price": 100
+        },
+        {
+            "name": "sharbati",
+            "weight": 1,
+            "price": 50
+        }
+    ]
+}

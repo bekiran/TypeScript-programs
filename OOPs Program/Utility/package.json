@@ -1,0 +1,18 @@
+{
+  "name": "utility",
+  "version": "1.0.0",
+  "main": "utility.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kiran B.E.",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/node": "^11.9.5",
+    "prompt": "^1.0.0",
+    "prompt-sync": "^4.1.6",
+    "readline-sync": "^1.4.9",
+    "typescript-compiler": "^1.4.1-2"
+  }
+}
