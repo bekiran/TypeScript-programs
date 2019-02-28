@@ -27,7 +27,7 @@ var contactRestriction = /[0-9]/g; //Regular expression is used to find any char
 
 class Address {
     constructor() { }
-    createAddress() {
+    createAddress() { 
         console.log("*** Please enter your information details in addressbook ***");
         var name: any = prompt("Please enter your first name : ");
         var lastName: any = prompt("Please enter your last name : ");
@@ -83,7 +83,7 @@ class Address {
 
 
         console.log("Address updated succesfully!");
-        console.log("Your information as per our record is: \r\n First Name: " + name + "\r\nLast Name: " + lastName + "\r\nStreet: " + street + "\r\nCity: " + city + "\r\nState: " + state + "\r\nNationality: " + nation);
+        console.log("Your information on record is: \r\n First Name: " + name + "\r\nLast Name: " + lastName + "\r\nStreet: " + street + "\r\nCity: " + city + "\r\nState: " + state + "\r\nNationality: " + nation);
     }
     compare1(a: any, b: any) {
         if (a.Name.toLowerCase() < b.Name.toLowerCase()) {
@@ -104,7 +104,7 @@ class Address {
             for (var i = 0; i < arrayOfObjects.Person.length; i++) {
                 console.log(arrayOfObjects.Person[i]);
             }
-            var update = prompt("Please enter the name of profile: ");
+            var update = prompt("Please enter profile name : ");
             for (var k = 0; k < arrayOfObjects.Person.length; k++) {
 
                 if (update == arrayOfObjects.Person[k].Name) {
@@ -297,7 +297,7 @@ class Address {
                             }
                             fs.writeFile('Addressbook.json', JSON.stringify(arrayOfObjects), 'utf-8', function (err: any) {
                                 if (err) throw err
-                                console.log('Done!')
+                                console.log('Sucess...')
                             })
                             break;
 
@@ -348,11 +348,11 @@ class Address {
 
 function address() {
     var a = new Address();
-    console.log("****************** ADDRESS BOOK ***************************************");
-    console.log("1: Create new profile");
+    console.log("****************** ADDRESS BOOK **********************************");
+    console.log("1: Update address book");
     console.log("2: Open Address Book");
     console.log("3: Exit");
-    var choice1 = prompt("Please enter your choice: \n");
+    var choice1 = prompt("Please enter your choice: ");
     switch (choice1) {
         case '1':
             a.createAddress();

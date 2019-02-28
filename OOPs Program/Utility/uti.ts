@@ -1,5 +1,5 @@
 /*************************************** Object Oriented Programs ****************************************/
-const readline = require("readline-sync");
+// const readline = require("readline-sync");
 var read = require("readline-sync");
 
 module.exports = {

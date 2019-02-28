@@ -1,0 +1,92 @@
+{
+    "Doctors": [
+        {
+            "Name": "Dr Kiran",
+            "ID": 1234,
+            "Specialization": "Cardiologist",
+            "Availability": "AM"
+        },
+        {
+            "Name": "Dr Nirmala",
+            "ID": 5678,
+            "Specialization": "Childspecialist",
+            "Availability": "PM"
+        },
+        {
+            "Name": "Dr Eshwarappa",
+            "ID": 8912,
+            "Specialization": "Cardiologist",
+            "Availability": "AM"
+        },
+        {
+            "Name": "Dr Manoj",
+            "ID": 7890,
+            "Specialization": "Ortho",
+            "Availability": "PM"
+        },
+        {
+            "Name": "Dr Huchappa",
+            "ID": 7890,
+            "Specialization": "Neurologist",
+            "Availability": "PM"
+        }
+    ],
+    "Patients": [
+        {
+            "Name": "Vishal",
+            "ID": "123",
+            "mobNo": "3453453453",
+            "Age": "21",
+            "Appointed_To": "Dr Huchappa"
+        },
+        {
+            "Name": "kumar",
+            "ID": 97,
+            "mobNo": "8989817590",
+            "Age": "22",
+            "Appointed_To": "Dr Manoj"
+        },
+        {
+            "Name": "vivek",
+            "ID": 740,
+            "mobNo": "7897897897",
+            "Age": "23",
+            "Appointed_To": "Dr Manoj"
+        },
+        {
+            "Name": "Dushyanth",
+            "ID": 597,
+            "mobNo": "5689125687",
+            "Age": "23",
+            "Appointed_To": "Dr Nirmala"
+        },
+        {
+            "Name": "kiran",
+            "ID": 547,
+            "mobNo": "2347961257",
+            "Age": "23",
+            "Appointed_To": "Dr Eshwarappa"
+        },
+        {
+            "Name": "maju",
+            "ID": 91,
+            "mobNo": "2769126748",
+            "Age": "25",
+            "Appointed_To": "Dr Manoj"
+        },
+        {
+            "Name": "jyo",
+            "ID": 623,
+            "mobNo": "2344668955",
+            "Age": "22",
+            "Appointed_To": "Dr kunal patil"
+        },
+        {
+            "Name": "madhu",
+            "ID": 912.7749594886038,
+            "mobNo": "234234234",
+            "Age": "34",
+            "Appointed_To": "Dr Manoj"
+        }
+    ]
+}
