@@ -33,6 +33,7 @@ var utility = /** @class */ (function () {
         var data = fs.readFileSync('inventory.json');
         //for holding the object.
         var jsonGrocery = JSON.parse(data);
+        console.log("Please select the iteam bellow you want purchase \n");
         console.log("1: Rice");
         console.log("2: pulses");
         console.log("3: wheat");
@@ -70,22 +71,25 @@ var utility = /** @class */ (function () {
     *************************************************************************************************/
     utility.prototype.clinique = function () {
         var data = fs.readFileSync('clinique.json');
+        var prompt1 = require('prompt-sync')();
         var clinique = JSON.parse(data);
         do {
             console.log("1. Add appointment");
             console.log("2. Print list");
             console.log("3. search");
             console.log("4. exit ");
-            var option = prompt("Enter the option : ");
+            // console.log('test1');
+            var option = prompt1("Enter the option : ");
+            console.log('test2');
             switch (option) {
                 case '1':
-                    console.log(" List of doctors avilable are : ");
-                    console.log(clinique.doctors);
-                    var name = prompt("Enter the name of patient: ");
+                    // console.log(" List of doctors avilable are : ");
+                    // console.log(clinique.doctors);
+                    var name = prompt1("Enter the name of patient: ");
                     var ID = Math.floor(Math.random() * 1000);
-                    var mobNo = prompt("Enter your mobile number");
-                    var age = prompt("Please Enter your age: ");
-                    var appointment_To = prompt("Enter the name of doctor you want appointment with : ");
+                    var mobNo = prompt1("Enter your mobile number");
+                    var age = prompt1("Please Enter your age: ");
+                    var appointment_To = prompt1("Enter the name of doctor you want appointment with : ");
                     clinique.Patients.push({
                         "Name": name,
                         "ID": ID,
@@ -93,7 +97,7 @@ var utility = /** @class */ (function () {
                         "age": age,
                         "appoinntment_To": appointment_To
                     });
-                    console.log("data on 45 ", clinique.Patients);
+                    console.log(clinique.Patients);
                     console.log("Appointment added sucessfully!");
                     fs.writeFileSync('clinique.json', JSON.stringify(clinique));
                     break;
@@ -103,12 +107,12 @@ var utility = /** @class */ (function () {
                 case '3':
                     console.log("   Search List   ");
                     console.log("1. Doctor \n 2.Patient");
-                    var option2 = prompt('Enter Option: ');
+                    var option2 = prompt1('Enter Option: ');
                     if (option2 == 1) {
                         console.log("1. Search by Name \n2.Search ID \n3.Search by Specialization \n4.Search by Availability");
-                        var option3 = prompt('Enter options: ');
+                        var option3 = prompt1('Enter options: ');
                         if (option3 == 1) {
-                            var i = prompt('Name: ');
+                            var i = prompt1('Name: ');
                             for (var key in clinique.Doctors) {
                                 if (clinique.Doctors[key].Name == i) {
                                     console.log(" Doctor Details");
@@ -117,7 +121,7 @@ var utility = /** @class */ (function () {
                             }
                         }
                         else if (option3 == 2) {
-                            var i = prompt('ID: ');
+                            var i = prompt1('ID: ');
                             for (var key in clinique.Doctors) {
                                 if (clinique.Doctors[key].ID == i) {
                                     console.log(" Doctor Details");
@@ -126,7 +130,7 @@ var utility = /** @class */ (function () {
                             }
                         }
                         else if (option3 == 3) {
-                            var i = prompt('Specialization: ');
+                            var i = prompt1('Specialization: ');
                             for (var key in clinique.Doctors) {
                                 if (clinique.Doctors[key].Specialization == i) {
                                     console.log(" Doctor Details");
@@ -135,7 +139,7 @@ var utility = /** @class */ (function () {
                             }
                         }
                         else if (option3 == 4) {
-                            var i = prompt('Availability: ');
+                            var i = prompt1('Availability: ');
                             for (var key in clinique.Doctors) {
                                 if (clinique.Doctors[key].Availability == i) {
                                     console.log("Doctors Details");
@@ -148,7 +152,7 @@ var utility = /** @class */ (function () {
                         console.log("1.Search by Name\n2.Search by ID\n3.Search by mobNo\n4.Search by Age");
                         var option4 = prompt('Enter option: ');
                         if (option4 == 1) {
-                            var i = prompt('Name: ');
+                            var i = prompt1('Name: ');
                             for (var key in clinique.Patients) {
                                 if (clinique.Patients[key].Name == i) {
                                     console.log(" Patients Details");
@@ -157,7 +161,7 @@ var utility = /** @class */ (function () {
                             }
                         }
                         else if (option4 == 2) {
-                            var i = prompt('ID: ');
+                            var i = prompt1('ID: ');
                             for (var key in clinique.Patients) {
                                 if (clinique.Patients[key].ID == i) {
                                     console.log("Patient Details");
@@ -166,7 +170,7 @@ var utility = /** @class */ (function () {
                             }
                         }
                         else if (option4 == 3) {
-                            var i = prompt('mobNo: ');
+                            var i = prompt1('mobNo: ');
                             for (var key in clinique.Patients) {
                                 if (clinique.Patients[key].mobNo == i) {
                                     console.log("Patient Details");
@@ -175,7 +179,7 @@ var utility = /** @class */ (function () {
                             }
                         }
                         else if (option4 == 4) {
-                            var i = prompt('Age: ');
+                            var i = prompt1('Age: ');
                             for (var key in clinique.Patients) {
                                 if (clinique.Patients[key].Age == i) {
                                     console.log("Patient Details");
@@ -190,7 +194,7 @@ var utility = /** @class */ (function () {
                 default:
                     console.log("please enter valid input");
             }
-        } while (option != 4);
+        } while (option != '4');
     };
     return utility;
 }());

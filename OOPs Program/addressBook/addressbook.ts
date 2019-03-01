@@ -288,7 +288,7 @@ class Address {
                             break;
 
                         case '2':
-                            var update = prompt("Please enter the index of item you want to delete: ");
+                            var update = prompt("Please enter the item you want to delete: ");
                             arrayOfObjects.Person[update];
                             for (var k = 0; k < arrayOfObjects.Person.length; k++) {
                                 if (arrayOfObjects.Person[k] == null) {

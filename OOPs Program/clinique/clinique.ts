@@ -7,15 +7,14 @@
 *  @since   : 26-02-2019
 **************************************************************************************************/
 
-
-var utility = require('../Utility/Utility');
+var Utility = require('../Utility/Utility');
 //created object of utility using new keyword.
-var Utility = new utility();
+var utility = new Utility();
 class cliniqueManagement {
 
     cmanagement()
     {
-       Utility.clinique();
+       utility.clinique();
     }
 
 }

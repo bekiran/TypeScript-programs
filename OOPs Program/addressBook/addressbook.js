@@ -249,7 +249,7 @@ var Address = /** @class */ (function () {
                             }
                             break;
                         case '2':
-                            var update = prompt("Please enter the index of item you want to delete: ");
+                            var update = prompt("Please enter the item you want to delete: ");
                             arrayOfObjects.Person[update];
                             for (var k = 0; k < arrayOfObjects.Person.length; k++) {
                                 if (arrayOfObjects.Person[k] == null) {
@@ -259,7 +259,7 @@ var Address = /** @class */ (function () {
                             fs.writeFile('Addressbook.json', JSON.stringify(arrayOfObjects), 'utf-8', function (err) {
                                 if (err)
                                     throw err;
-                                console.log('Done!');
+                                console.log('Sucess...');
                             });
                             break;
                         case '3':
